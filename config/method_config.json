@@ -1,0 +1,24 @@
+{
+    "decomposition":
+    {
+        "qr":
+        {
+            "input":
+            {
+                "file_dir":"files/input/",
+                "file_name":"constraint_matrix.json"
+            },
+            "decomposed":
+            {
+                "file_dir":"files/decomposed",
+                "file_name":"qr_decomposed"
+            },
+            "output":
+            {
+                "file_dir":"files/output/",
+                "file_name":"rhs_matrix.json"
+            }
+
+        }
+    }
+}
