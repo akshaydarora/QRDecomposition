@@ -5,6 +5,7 @@ from linear_systems.matrix import Matrix
 class LeastSquares(Matrix): 
 
     def __init__(self,method_type,method_name,constraint_matrix,decomposed,rhs_matrix):
+
         Matrix.__init__(self,constraint_matrix)
         self.method_type=method_type
         self.method_name=method_name
@@ -14,6 +15,7 @@ class LeastSquares(Matrix):
 
 
     def getLeastSquares(self):
+
         Q=self.decomposed["Q"]
         R=self.decomposed["R"]
         QTB=Q.T@self.rhs_matrix
@@ -22,6 +24,7 @@ class LeastSquares(Matrix):
     
 
     def getLeastSquaresNorm(self,x_lcs):
+        
         # Compute ||AX-B||
         x_lcs_norm=linalg.norm(self.constraint_matrix.dot(x_lcs)-self.rhs_matrix, 2)
         return x_lcs_norm

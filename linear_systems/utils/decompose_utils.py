@@ -4,6 +4,7 @@ from linear_systems.matrix import Matrix
 
 class Decomposer(Matrix):
 
+
     def __init__(self,method_name,method_type,constraint_matrix)-> None:
         
         Matrix.__init__(self,constraint_matrix)
@@ -14,7 +15,9 @@ class Decomposer(Matrix):
         self.constraint_matrix=np.array(constraint_matrix)
         self.rank=linalg.matrix_rank(constraint_matrix)
 
+
     def getDecomposeResult(self):
+        
         # Gram-Schmidt Method
         if self.rank<self.m:
             raise Exception("rank is smaller than columns")
@@ -28,4 +31,3 @@ class Decomposer(Matrix):
 
         return Q,R
     
-            

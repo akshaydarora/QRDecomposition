@@ -4,6 +4,7 @@ class Matrix(object):
 
 
     def __init__(self, matrix) -> None:
+        
         # print(" Initialized a new instance of Matrix :A")
         self.matrix = np.array(matrix)
         self.metadata={
