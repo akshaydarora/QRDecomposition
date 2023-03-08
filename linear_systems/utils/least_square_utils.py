@@ -10,7 +10,7 @@ class LeastSquares(Matrix):
         self.method_name=method_name
         self.constraint_matrix=np.array(constraint_matrix)
         self.decomposed=decomposed
-        self.rhs_matrix=rhs_matrix
+        self.rhs_matrix=np.array(rhs_matrix)
 
 
     def getLeastSquares(self):

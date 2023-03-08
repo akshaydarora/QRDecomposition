@@ -14,7 +14,7 @@ if __name__=="__main__":
 
     # Decompose the Matrix A with the Decomposition Method   
     decomposed = decompose(method_name,method_type,constraint_matrix)
-    print("decomposed result using {0}:{1} method :{2}".format(method_name,method_type,decomposed))
+    # print("decomposed result using {0}:{1} method :{2}".format(method_name,method_type,decomposed))
 
     # Compute the Least Squares and Least Squares Norm
     least_squares, least_squares_norm = get_least_squares(method_type,method_name,
